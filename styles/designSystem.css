@@ -1,0 +1,117 @@
+/**
+* !google fonts
+**/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Revamped.otf);
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-white-btn: #f8f3f3;
+  --color-yellow: #e0b44c;
+
+  --color-silver: black;
+  /* #B3B3B3 */
+  --color-gold: black;
+  /* #D8BD86 */
+  --color-light-gold: #fdf2e2;
+
+  --color-theme-black: #201b1b;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-lato: "Lato", sans-serif;
+
+  --mobile: 576px;
+  --tablet: 768px;
+  --laptop: 992px;
+  --desktop: 1200px;
+}
+
+/* body {
+    background-color: var(--color-theme-black);
+} */
+
+/**
+* !common styles
+**/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.section-margin {
+  width: 90vw;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-family: var(--font-montserrat);
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.responsive-img {
+  height: auto;
+  width: 100%;
+}
+/**
+* !Button styles
+**/
+
+.primary-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3.125rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--font-montserrat);
+  cursor: pointer;
+}
+
+.active-btn {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
+.passive-btn {
+  background-color: transparent;
+  color: var(--color-yellow);
+  border: 1px solid black;
+}
+
+/**
+* !Navbar styles
+**/
+.navbar {
+  height: 10vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 100%;
+  padding: 0.625rem;
+}
+
+.navbar__menu--items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  font-family: var(--font-montserrat);
+  font-weight: 600px;
+  font-size: 1.5rem;
+  color: var(--color-silver);
+}

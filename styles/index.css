@@ -1,0 +1,732 @@
+/**
+* Hero section
+**/
+
+.hero {
+  padding: 0.25rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 0rem;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero__left--title {
+  font-size: 4.5rem;
+  font-family: myFirstFont;
+}
+
+.hero__left--mechnotron_year {
+  font-size: 3.5rem;
+  font-family: myFirstFont;
+}
+
+
+
+
+/* .hero__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -4.375rem;
+} */
+
+.hero__left--content-discription h1 {
+  font-family: var(--font-montserrat);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero__left--content-discription {
+  display: flex;
+  flex-direction: column;
+  /* line-height: 2rem; */
+}
+
+.hero__left--content-discription-text {
+  font-size: 2rem;
+}
+
+.hero__right--mechnotron_logo {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero__right--mechnotron_logo img {
+  height: 100%;
+  width: auto;
+}
+
+.hero__counts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0rem;
+}
+
+[class^="hero__counts"] {
+  padding: 1rem;
+}
+
+[class^="hero__counts--count-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: var(--font-montserrat);
+
+  color: var(--color-gold);
+}
+
+[class^="hero__counts--count-"] span {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.hero__content--mechnotron_logo img {
+  width: 100%;
+  height: auto;
+}
+
+/**
+* !ABOUT SECTION
+**/
+
+.about_achievements {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  min-height: 100vh;
+  padding: 2rem 0rem;
+  gap: 1rem;
+}
+
+.about_achievements__about--discription-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.about_achievements__about--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.about_achievements__achievements--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.about_achievements__achievements--title {
+  display: flex;
+  justify-content: end;
+}
+
+.about_achievements__achievements--discription-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.about_achievements__achievements--img {
+  padding: 1rem;
+}
+
+.about_achievements__about--img {
+  padding: 1rem;
+  order: 2;
+}
+
+.about_achievements__about--text {
+  font-size: 1rem;
+  border-radius: 25px;
+  line-height: 2rem;
+  padding: 1rem;
+  align-items: center;
+  order: 1;
+}
+
+.about_achievements__achievements--text {
+  font-size: 1rem;
+  border-radius: 25px;
+  line-height: 2rem;
+  padding: 1rem;
+
+  align-items: center;
+}
+
+/**
+* Events
+**/
+.events {
+  min-height: 100vh;
+  padding: 2rem 0rem;
+}
+
+.events__title {
+  text-align: center;
+}
+
+.events__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.events__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.events__cards--card {
+  border: 1px solid black;
+  border-radius: 1.5625rem;
+  padding: 1rem;
+}
+
+.events__cards--card-status {
+  display: flex;
+  align-items: center;
+  padding-top: 0.3rem;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+}
+
+.events__cards--card-status::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: green;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.events__cards--card-title {
+  font-family: var(--font-poppins);
+  font-size: 1.25rem;
+}
+
+.events__cards--card-title-discription {
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+
+.events__cards--card-title-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+p {
+  font-weight: bold;
+  font-family: var(--font-poppins);
+}
+
+.events__buttons {
+  padding-bottom: 1rem;
+}
+
+/**
+* ! Workshop
+**/
+.workshop {
+  padding: 2rem 0rem;
+}
+.workshop__title {
+  text-align: center;
+}
+
+.workshop__cards--card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  gap: 2rem;
+  border-radius: 1.5625rem;
+  padding: 1rem;
+}
+
+.workshop__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.workshop__cards--card img {
+  border-radius: 1.5625rem;
+  width: 35%;
+}
+
+.workshop__cards--card-discription-title {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.workshop__cards--card-discription {
+  font-family: var(--font-montserrat);
+  font-size: 1.1875rem;
+}
+
+/**
+* !FAQ
+**/
+
+.FAQ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem 0rem;
+}
+.FAQ__contact-form {
+  border: 1px black solid;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+}
+.FAQ__contact-form input,
+textarea {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1rem;
+}
+
+.footer {
+  /* min-height: 20vh; */
+  background-color: black;
+  padding: 2rem;
+}
+
+.footer__linksection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__copyrights {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.footer__linksection-1 {
+  font-size: 2rem;
+  font-family: myFirstFont;
+  color: white;
+}
+
+.footer__linksection-3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-links [class^="fab fa-"] {
+  color: white;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+/**
+* bootstra;
+**/
+
+.temp-wrap {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 3rem;
+}
+
+.FAQ__contact {
+  padding-top: 8rem;
+}
+
+/*******************
+** RESPONSIVENESS
+*******************/
+
+/* 576 */
+
+@media (max-width: 576px) {
+  html {
+    font-size: 10px;
+    font-family: myFirstFont;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__buttons {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero__right {
+    order: 1;
+  }
+
+  .hero__left {
+    order: 2;
+  }
+
+  
+/* @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+  .hero__left--title {
+    text-align: center;
+    margin: 0rem;
+    animation: fadeAndScale 4.5s cubic-bezier(.17,.67,.83,.67);
+    /* animation: fadeIn 5s;  */
+  animation-delay: -1s;
+  }
+
+  .hero__left--content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0rem;
+  }
+
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    15% {
+      transform: rotate(20deg);
+    }
+    30% {
+      transform: rotate(40deg);
+    }
+    45% {
+      transform: rotate(60deg);
+    }
+    60% {
+      transform: rotate(80deg);
+    }
+    75% {
+      transform: rotate(100deg);
+    }
+    90% {
+      transform: rotate(100deg);
+    }
+  
+    /* 100% {
+      transform: rotate(120deg);
+    } */}
+
+  @keyframes fadeAndScale {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.75, 0.75, 1);
+    }
+  
+    70% {
+      opacity: 0;
+      transform: scale3d(0.75, 0.75, 1);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes fadeAndSlide {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.75, 0.75, 1);
+    }
+  
+    70% {
+      opacity: 0;
+      transform: scale3d(0.75, 0.75, 1);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .hero__right--mechnotron_logo img {
+    height: 20rem;
+    width: auto;
+  }
+  .hero__right--mechnotron_logo {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__mechnotron_logo {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .hero__content--outer_logo-img {
+    height: auto;
+    width: 100%;
+  
+    animation: fadeAndScale 3s cubic-bezier(0.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.5;
+  
+    animation: rotation 3.5s linear;
+    animation-delay: 2s;
+  }
+  
+  .hero__content--inner_logo-img {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* top: 0;
+    left: 0; */
+    animation: fadeAndScale 3s cubic-bezier(0.39, -1.05, 0.58, 1.95);
+    animation-delay: -1s;
+  }
+
+
+
+  .hero__left--mechnotron_year {
+    order: 2;
+    text-align: center;
+    animation: fadeAndScale 4.5s cubic-bezier(.17,.67,.83,.67);
+    /* animation: fadeIn 5s;  */
+  animation-delay: -1s;
+  }
+
+
+  /*sample animation*/
+
+
+
+
+
+
+  
+  .hero__left--content-discription-text h1 {
+    text-align: center;
+    animation: fadeAndScale 5s cubic-bezier(.17,.67,.83,.67);
+    /* animation: fadeIn 5s;  */
+  animation-delay: -0.5s;
+  }
+
+  .hero__left--content-discription-text {
+    text-align: center;
+    animation: fadeAndScale 5.5s cubic-bezier(.17,.67,.83,.67);
+    /* animation: fadeIn 5s;  */
+  animation-delay: -0.25s;
+  }
+
+  .hero__counts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero__left--content-discription-buttons {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeAndScale 6s cubic-bezier(.17,.67,.83,.67);
+    /* animation: fadeIn 5s;  */
+  animation-delay: -0.1s;
+  }
+
+  /* animation on scroll*/
+  /* .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+
+  .fade-in.appear {
+    opacity: 1;
+  }
+
+  .more-stuff-grid {
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+        1em,
+        1fr
+      );
+  }
+
+  .from-left {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .from-right {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  } */
+
+  .hidden {
+    opacity: 0;
+    filter: blur(3px);
+    /* transform: translateX(100%); */
+    transition-delay: 10s;
+    transition: all 1s;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  .about_achievements__about--discription-wrapper {
+    flex-direction: column;
+  }
+
+  .about_achievements__about--wrapper {
+    flex-direction: column;
+  }
+
+  .about_achievements__achievements--discription-wrapper {
+    flex-direction: column;
+  }
+
+  .about_achievements__achievements--wrapper {
+    flex-direction: column;
+  }
+
+  .about_achievements__about--title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_achievements__about {
+    text-align: center;
+  }
+
+  .about_achievements__achievements--title {
+    align-items: center;
+    justify-content: center;
+  }
+  .about_achievements__achievements {
+    text-align: center;
+  }
+
+  .about_achievements__achievements--text {
+    order: 2;
+  }
+
+  .about_achievements__achievements--img {
+    order: 1;
+  }
+
+  .about_achievements__about--img {
+    order: 1;
+  }
+
+  .about_achievements__about--text {
+    order: 2;
+  }
+
+  .hidden1 {
+    opacity: 0;
+    filter: blur(2px);
+    /* transform: translateX(100%); */
+    transition-delay: 10s;
+    transition: all 1s;
+  }
+  .show1 {
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+  }
+
+  .events__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* .hidden-card {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 2s;
+  }
+  .show-card {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  } */
+
+  .workshop__cards--card img {
+    width: 100%;
+  }
+
+  .workshop__cards--card {
+    flex-direction: column;
+  }
+
+  .FAQ {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .FAQ__contact--title {
+    text-align: center;
+  }
+
+  .FAQ__FAQ--title {
+    text-align: center;
+  }
+
+  .footer__linksection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__linksection-3 {
+    flex-direction: row;
+    flex-direction: start;
+    gap: 1rem;
+  }
+}
